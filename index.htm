@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left_Side">
+            <div class="perfil">
+                <div class="imgBx">    
+                    <img src="C:\Users\ignac\OneDrive\Imágenes\1644273039873.jpg" width: 100px  height: 100px>
+                </div>
+                <h2>Raúl Ignacio Rodríguez<br><span> Ingeniero Electrónico</span>
+
+                </h2>
+            </div>
+            <div class="infoContacto">
+                <h3 class="titulo"> Información de Contacto</h3>
+                <ul>
+                    <li>
+                      
+                        <button class="vinculo" id="cel" onclick="copiarTexto()"><i class="fa fa-phone" aria-hidden="true"></i></span></button>
+                        <span class="info">+549 3774 631986</span>
+                        
+
+                        <script>
+                            function copiarTexto() {
+                                var numero = "+5493774631986";
+                    
+                                // Crear un elemento de textarea temporal
+                                var tempTextArea = document.createElement("textarea");
+                                tempTextArea.value = numero;
+                    
+                                // Agregar el textarea al cuerpo de la página
+                                document.body.appendChild(tempTextArea);
+                    
+                                // Seleccionar y copiar el contenido del textarea
+                                tempTextArea.select();
+                                document.execCommand("copy");
+                    
+                                // Eliminar el textarea temporal
+                                document.body.removeChild(tempTextArea);
+                    
+                                // Mostrar ventana emergente
+                                alert("Haz copiado el numero de Celular");
+                    
+                            }
+                        </script>
+
+                    </li>
+                    <li>
+                        <button class="vinculo" id="correo"><i class="fa fa-envelope" aria-hidden="true"></i></span></button>
+                        <!--<span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>  -->
+                        <span class="info">ignacio.rod11@gmail.com</span>
+                        <script>
+                            document.getElementById("correo").addEventListener("click", function() {
+                            window.open("https://mail.google.com/mail/u/0/#inbox", "_blank");
+                            });
+                        </script>
+                    </li>
+                    <li>
+                        <button class="vinculo" id="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></button>
+                        <!--
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        -->
+                        <span class="info">https://www.linkedin.com/in</span>
+                        <span class="icon"></span>
+                        <span class="info">/raul-ignacio-rodriguez</span>
+                        <span class="icon"></span>
+                        <span class="info">-89674773/</span>
+                        <script>
+                            document.getElementById("linkedin").addEventListener("click", function() {
+                            window.open("https://www.linkedin.com/in/raul-ignacio-rodriguez-89674773/", "_blank");
+                            });
+                        </script>
+                    </li>
+                    <li>
+                        <button class="vinculo" id="map"><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+                        <!--<span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>  -->
+                        <span class="info">Nogoya,E.R.,Arg.</span>
+                        <script>
+                            document.getElementById("map").addEventListener("click", function() {
+                            window.open("https://www.google.com/maps/place/Nogoy%C3%A1,+Entre+R%C3%ADos/@-32.3973986,-59.822807,14z/data=!3m1!4b1!4m6!3m5!1s0x95b13510c9697b6f:0x56df0d13059518c3!8m2!3d-32.3901919!4d-59.7931152!16s%2Fm%2F026pg1c?entry=ttu", "_blank");
+                            });
+                        </script>
+                    </li>
+                </ul>
+            </div>
+            <div class="infoEducacion">
+                  
+                <h3 
+                class="titulo"> Estudios</h3>
+                <ul>
+                    <li>
+                        <h5>2005-2012</h5>
+                        <h4>Ingeniería Electrónica</h4>
+                        <h4>UNNE,Argentina</h4>
+                    </li>
+                    <li>
+                        <h5>1999-2004</h5>
+                        <h4>Bachillerato Mercantil</h4>
+                        <h4>Colegio Salesiano</h4>
+                    </li>
+                    
+                
+            </li>
+            </div>
+            <div class="infoIdioma">
+                <h3 class="titulo">Idiomas</h3>
+                <ul>
+                    <li>
+                        <span class="texto">Español</span>
+                        <span class="porcentaje">
+                            <div style="width: 95%;"></div>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="texto">Inglés</span>
+                        <span class="porcentaje">
+                            <div style="width: 85%;"></div>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="texto">Portugués</span>
+                        <span class="porcentaje">
+                            <div style="width: 50%;"></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right_Side">
+        <div class="Caracteristicas">
+            <button class="perfProf" id="mePerf" onclick="alternarColor()">Perfil Profesional</button>
+             <!-- ><h2 class="titulo2">Perfil Profesional</h2> -->
+            <p id="miParrafo">Con más de 9 años de sólida experiencia como Instrumentista, he desempeñado un papel fundamental en el mantenimiento de una amplia gama de equipos, incluyendo válvulas, instrumentación industrial y diversos dispositivos eléctricos y electrónicos de envasado. Mi capacidad para evaluar y mejorar programas de PLC y sistemas SCADA ha sido una parte integral de mi rol. Como persona autodidacta, he cultivado habilidades avanzadas en inglés, programación en múltiples lenguajes y conocimientos en inteligencia artificial. Estas competencias se suman a las habilidades adquiridas a lo largo de mi formación en Ingeniería Electrónica, complementando mi perfil con una base académica sólida  </p>
+            <script>
+                var colorOriginal = "darkblue"; // Color original
+                var colorNuevo = "white";  // Color nuevo
+        
+        
+                function alternarColor() {
+                    // Obtener el elemento de párrafo por su ID
+                    var parrafo = document.getElementById("miParrafo");
+        
+                    // Alternar entre los colores originales y nuevos
+                    if (parrafo.style.color === colorOriginal) {
+                        parrafo.style.color = colorNuevo;
+                    } else {
+                        parrafo.style.color = colorOriginal;
+                    }
+                }
+            </script>
+        </div>
+        <div class="Exp">
+            <h2 class="titulo2">Experiencia Profesional</h2>
+                <div class="box">
+                    <div class="empresa">
+                    <h5>  2014-Presente</h5>
+                    <h5>S.A LaSibila</h5>
+                    </div>
+                    <div class="texto">
+                    <h4>Instrumentación y Control</h4>
+                    <p>Control predictivo, preventivo y correctivo de toda la Instrumentacion de la fabrica, valvulas de control y programas de PLC</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="empresa">
+                    <h5>  May 2012 - Ag 2012</h5>
+                    <h5>Comytel S.A</h5>
+                    </div>
+                    <div class="texto">
+                    <h4>Pasante Técnico Campo</h4>
+                    <p>Instalación de equipos RadioEnlace, Configuración de diferentes equipos Router, Switches, etc.</p>
+                    </div>
+                </div>
+        </div>
+        <div class="Habilidades">
+            <h2 class="titulo2">Habilidades Profesionales</h2>
+            <div class="box">
+                <h4>Programación PLC Ladder</h4>
+                <div class="porcentaje">
+                    <div style="width: 95%;"></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <h4>Python</h4>
+                <div class="porcentaje">
+                    <div style="width: 80%;"></div>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <h4>Microcon. y Electronica Gral.</h4>
+                <div class="porcentaje">
+                    <div style="width: 90%;"></div>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <h4>Bases de Datos</h4>
+                <div class="porcentaje">
+                    <div style="width: 70%;"></div>
+                    
+                </div>
+            </div> 
+            <div class="box">
+                <h4>POO</h4>
+                <div class="porcentaje">
+                    <div style="width: 65%;"></div>
+                    
+                </div>
+            </div>     
+        </div>
+        
+    </div>
+    
+</body>
+</html>

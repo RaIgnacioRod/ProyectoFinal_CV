@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Mono:wght@100;200&family=Roboto:ital,wght@1,100&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+body
+{
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position:relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height:1000px;
+    background: lightgray;
+    display:grid;
+    margin: 50px;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0);
+}
+.container .left_Side
+{
+    position: relative;
+    background: #495ed4;
+    padding: 40px;
+}
+.perfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    
+}
+.perfil h2
+{
+    color:#000000;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: x-large;
+    line-height: large;
+}
+.perfil h2 span
+{
+    font-size: medium;
+    font-weight: large;
+}
+.container .right_Side
+{
+    position: relative;
+    background: #94a3f7;
+    padding: 40px;
+
+}
+img
+{
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+.infoContacto{
+    padding-top: 20px;
+}
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    text-transform: uppercase;
+    font-weight: 2px;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: x-large;
+
+}
+.infoContacto ul{
+    position: relative;
+
+}
+.infoContacto ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.infoContacto ul li .icon{
+    
+    width:25px;
+    font-size:25px;
+    color: #709cec;
+}
+.infoContacto ul li .msj{
+    background-color: #495ed4;
+    color: #929fb6;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-size: 25px; 
+    width: 20px; 
+    height: 20px; 
+    
+
+}
+.infoContacto ul li .vinculo{
+    background-color: #495ed4;
+    color: #709cec;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-size: 25px; 
+    width: 20px; 
+    height: 20px; 
+    
+}
+
+.infoContacto ul li span{
+    color:aliceblue;
+    font-weight: 500;
+    font-size: small;
+}
+
+.infoEducacion .titulo{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    text-transform: uppercase;
+    font-weight: large;
+    font-style: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: x-large;
+
+}
+.infoEducacion ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.infoEducacion ul li{
+    margin-bottom: 15px;   
+}
+.infoEducacion h5 {
+    color:#709cec;
+    font-weight: 1200;
+    font-style: bold;
+    font-size: medium;
+    
+}
+.infoEducacion h4:nth-child(2) {
+    color:aliceblue;
+    font-weight: 800;
+}
+.infoEducacion h4 {
+    color:aliceblue;
+    font-weight: 200;
+}
+.infoIdioma h3{
+    margin-top: 40px;
+}
+.infoIdioma .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: black;
+    display: block;
+    margin-top: 5px;
+}
+.infoIdioma ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.infoIdioma .texto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    width: large;
+    size: small;
+}
+.infoIdioma .porcentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #709cec;
+}
+.Caracteristicas{
+    margin-bottom:50px;
+}
+.Caracteristicas:last-child
+{
+    margin-bottom: 0;
+}
+.perfProf{
+    background-color: #94a3f7;
+    font-family: 'Roboto', sans-serif;
+    color:#450769d7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 30px;
+    font-style: bold;
+    border: none;
+    border-radius: 100px; 
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.titulo2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    color:#450769d7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: x-large;
+    font-weight: large;
+   
+}
+#miParrafo {
+    color: darkblue;
+}
+.Caracteristicas p
+{
+    font-family:'Courier New', Courier, monospace;
+    color:darkblue;
+    text-decoration: solid;
+}
+.Exp .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.Exp .box .empresa{
+    min-width: 150px;
+}
+.Exp .box .empresa h5{
+    padding-top: 8px;
+    text-transform: uppercase;
+    color: #f1e7f7d7;
+    font-weight: large;
+    font-size: 15px;
+   
+}
+.Exp .box .texto h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 2px;
+    text-transform: uppercase;
+    color: #450769d7;
+    font-size: 16px;
+    font-weight: large;
+    
+}
+.Exp .box .texto p{
+    font-family:'Courier New', Courier, monospace;
+    padding-top: 2px;
+    color: darkblue;
+    font-weight: x-large;
+    font-size: medium;
+}
+.Habilidades h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    color:#450769d7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: x-large;
+    font-weight: large;
+
+}
+.Habilidades .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns:150px 1fr;
+    justify-content:center;
+    align-items:center;
+}
+.Habilidades .box h4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color:#f1e7f7d7;
+    font-weight: x-large;
+    font-size: 14px;
+}
+.Habilidades .box .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: blue;
+}
+.Habilidades .box .porcentaje div{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background: #450769d7 ;
+}
+.Prueba .button{
+    background: #000000;
+}
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
